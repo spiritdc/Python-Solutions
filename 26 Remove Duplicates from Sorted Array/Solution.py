@@ -4,3 +4,7 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
+        if len(nums) < 2:
+            return len(nums)
+
+        
