@@ -7,9 +7,11 @@ class Solution:
         if len(nums) < 2:
             return len(nums)
 
+        last = nums[0]
         i = 1
         while i < len(nums):
-            if nums.index(nums[i]) == i:
+            if last != nums[i]:
+                last = nums[i]
                 i += 1
             else:
                 nums.remove(nums[i])
